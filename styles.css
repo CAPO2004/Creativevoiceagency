@@ -26,6 +26,13 @@ body {
   position: relative;
   overflow-x: hidden;
   transition: background 0.3s, color 0.3s;
+  width: 100%; /* إضافة هذا السطر */
+  box-sizing: border-box; /* إضافة هذا السطر */
+}
+
+/* إضافة هذا التنسيق لضمان أن جميع العناصر لا تتجاوز عرض الشاشة */
+* {
+  box-sizing: border-box;
 }
 
 /* الوضع الليلي */
