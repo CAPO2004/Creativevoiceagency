@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>نبذة عن أعمالنا - Creative Voice</title>
 
+  <!-- AOS CSS (Animations on Scroll) -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button id="theme-toggle">🌙</button>
 
+  <!-- زر الوضع الليلي -->
+  <button id="themeToggle">🌙</button>
+
+  <!-- الخلفية المتحركة -->
   <div class="floating-icons">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="icon" style="left:10%; animation-duration: 22s;">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" class="icon" style="left:30%; animation-duration: 18s;">
@@ -26,6 +30,7 @@
 
   <section class="section">
     <div class="projects">
+      <!-- مشروع 1 -->
       <div class="card" data-aos="zoom-in" data-aos-delay="100">
         <h3>موقع شركة استشارات - عميل: أحمد سامي</h3>
         <div class="metrics">
@@ -37,7 +42,53 @@
         <div class="stars">★★★★★</div>
       </div>
 
-      <!-- تقدر تضيف كروت مشاريع تانية بنفس النمط -->
+      <!-- مشروع 2 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>موقع متجر إلكتروني - عميلة: منى إبراهيم</h3>
+        <div class="metrics">
+          <p>📊 +50,000 زائر شهري</p>
+          <p>💰 +200 عملية بيع</p>
+          <p>📈 ROI الحملات الإعلانية: 4.2x</p>
+        </div>
+        <p>"مبقيناش نشيل هم إدارة الموقع، الفريق ماسك كل حاجة باحترافية."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <!-- مشروع 3 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>موقع تعليمي - عميل: محمود علي</h3>
+        <div class="metrics">
+          <p>📊 +12,000 طالب مسجل</p>
+          <p>💰 500 كورس مبيع</p>
+          <p>📈 معدل تحويل: 9%</p>
+        </div>
+        <p>"التقارير الشهرية ساعدتنا نفهم عملائنا أكتر ونطور خدماتنا."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <!-- مشروع 4 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>موقع شركة سياحة - عميلة: سارة محمد</h3>
+        <div class="metrics">
+          <p>📊 +80,000 وصول من إعلانات فيسبوك</p>
+          <p>💰 320 حجز رحلة</p>
+          <p>📈 معدل نقر على الإعلانات: 4%</p>
+        </div>
+        <p>"الفريق ساعدنا نوصل لعملاء جدد بشكل أسرع مما توقعنا."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <!-- مشروع 5 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="500">
+        <h3>موقع مطعم - عميل: خالد عبد الرحمن</h3>
+        <div class="metrics">
+          <p>📊 +25,000 تفاعل على المنيو أونلاين</p>
+          <p>💰 1200 طلب دليفري من خلال الموقع</p>
+          <p>📈 تحسين ظهور SEO: من الصفحة 5 للصفحة 1</p>
+        </div>
+        <p>"بفضل إدارة الموقع والـ SEO، مبيعات الدليفري زادت بشكل كبير."</p>
+        <div class="stars">★★★★★</div>
+      </div>
     </div>
   </section>
 
@@ -46,20 +97,46 @@
     <a href="https://wa.me/201287296630" class="btn">تواصل معنا دلوقتي</a>
   </section>
 
-  <footer>
+  <footer data-aos="fade-up">
     <div style="margin-bottom:15px;">
       <h3 style="margin:0;font-size:22px;">Creative Voice Agency</h3>
+      <p style="margin:5px 0 0;font-size:14px;color:#dce7f3;">شريكك في تصميم وإدارة المواقع</p>
     </div>
+
+    <div style="margin:15px 0;">
+      <a href="https://wa.me/201287296630" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Whatsapp" width="28">
+      </a>
+      <a href="https://facebook.com/CreativeVoiceAgency" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="28">
+      </a>
+      <a href="https://instagram.com/" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="28">
+      </a>
+      <a href="https://linkedin.com/" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="28">
+      </a>
+      <a href="https://youtube.com/" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube" width="28">
+      </a>
+    </div>
+
     <div style="margin:15px 0;font-size:15px;">
       📞 01287296630 | ✉️ Adel_Saad2@hotmail.com
     </div>
+
+    <p style="margin-top:15px;font-size:13px;color:#dce7f3;">
+      © 2025 Creative Voice Agency - جميع الحقوق محفوظة
+    </p>
   </footer>
 
-  <a href="https://wa.me/201287296630" target="_blank" id="whatsappBtn">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-  </a>
-
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/main.js"></script>
+  <script src="script.js"></script>
+<!-- زر واتساب CTA مع اللوجو فقط -->
+<a href="https://wa.me/201287296630" target="_blank" id="whatsappBtn">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
 </body>
 </html>
