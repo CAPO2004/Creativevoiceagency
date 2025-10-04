@@ -1,56 +1,131 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>خدمة إدارة المواقع - Creative Voice</title>
-
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="hero" data-aos="fade-up">
-      <div>
-        <h1>خدمة إدارة المواقع</h1>
-        <p class="lead">نحن نهتم بكل حاجة في موقعك: محتوى، SEO، باك أب، وصيانة.</p>
-        <div class="badges">
-          <span class="badge">دعم 24/7</span>
-          <span class="badge">تحديث أسبوعي</span>
-          <span class="badge">تقارير شهرية</span>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <h3>احجز خطة الإدارة</h3>
-          <p>اختار الباقة اللي تناسبك وابدأ في تحسين أداء موقعك اليوم.</p>
-          <a href="https://wa.me/201287296630" class="btn">اطلب الخدمة</a>
-        </div>
-      </div>
-    </header>
 
-    <!-- تفاصيل الخدمة -->
-    <section class="grid" data-aos="fade-up">
-      <div class="card">
-        <h4>تحسين السيرفر والنسخ الاحتياطي</h4>
-        <p class="small">نسخ دورية وإعدادات أمان أساسية.</p>
-      </div>
-      <div class="card">
-        <h4>تحسين ظهورك في جوجل (SEO)</h4>
-        <p class="small">نطبق قواعد السيو الأساسية ونحسّن صفحات مهمة.</p>
-      </div>
-      <div class="card">
-        <h4>مراقبة الأداء</h4>
-        <p class="small">تقارير دورية عن الزيارات وسرعة الموقع.</p>
-      </div>
-    </section>
+  <!-- floating icons background -->
+  <div class="floating-icons" aria-hidden="true">
+    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="icon" style="left:8%; top:12%; animation-duration:24s" alt="">
+    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733558.png" class="icon" style="left:28%; top:45%; animation-duration:20s" alt="">
+    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="icon" style="left:48%; top:72%; animation-duration:26s" alt="">
+    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/733/733646.png" class="icon" style="left:68%; top:20%; animation-duration:22s" alt="">
+    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/742/742751.png" class="icon" style="left:86%; top:60%; animation-duration:28s" alt="">
   </div>
 
+  <!-- زر الوضع الليلي -->
+  <button id="themeToggle">🌙</button>
+
+  <!-- زر واتساب CTA مع اللوجو فقط -->
   <a href="https://wa.me/201287296630" target="_blank" id="whatsappBtn">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
   </a>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/main.js"></script>
+  <div class="container">
+    <!-- Hero -->
+    <div class="hero">
+      <div>
+        <div class="badges anim" data-anim="fade-up" data-delay="0.05s">
+          <div class="badge">خدمة إدارة المواقع</div>
+          <div class="badge">دعم شهري</div>
+          <div class="badge">SEO & Performance</div>
+        </div>
+
+        <h1 class="anim" data-anim="zoom-in" data-delay="0.10s">موقعك دايمًا محدث، سريع، وبيجيب عملاء — من غير تعب منك 🚀</h1>
+
+        <p class="lead anim" data-anim="fade-up" data-delay="0.14s">إدارتنا للمواقع مصممة لأصحاب الأعمال اللي مش معاهم وقت: تحديث محتوى، رفع صور، تحسين سرعات، ومتابعة الأداء عشان الموقع يشتغل فعلاً ويجيب عملاء.</p>
+
+        <div class="grid" aria-hidden="false">
+          <div class="feature anim" data-anim="fade-up" data-delay="0.18s">
+            <h4>تحديث محتوى احترافي</h4>
+            <p class="small">رفع المقالات، تعديل النصوص، وتنظيم المحتوى عشان يتكلم عن خدماتك صح.</p>
+          </div>
+          <div class="feature anim" data-anim="fade-up" data-delay="0.22s">
+            <h4>تحسين ظهورك في جوجل (SEO)</h4>
+            <p class="small">نطبق قواعد السيو الأساسية ونحسّن صفحات مهمة عشان تجيب زوار طبيعيين.</p>
+          </div>
+          <div class="feature anim" data-anim="fade-up" data-delay="0.26s">
+            <h4>مراقبة الأداء</h4>
+            <p class="small">تقارير دورية عن الزيارات، سرعة الموقع، وتحويل الزوار لعملاء.</p>
+          </div>
+          <div class="feature anim" data-anim="fade-up" data-delay="0.30s">
+            <h4>دعم فني وصيانة</h4>
+            <p class="small">تحديثات أمنية، باك أب منتظم، والتعامل مع أي عطل بسرعة.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+      <h3 class="anim" data-anim="fade-right" data-delay="0.34s">آراء عملائنا اللي بيتابعونا</h3>
+
+      <div class="test anim" data-anim="zoom-in" data-delay="0.36s">
+        <div class="stars">★★★★★</div>
+        <p>"فريق Creative Voice ماسك الموقع بتاعنا بالكامل من أول شهرين؛ الزيارات زادت ومعدلات التحويل اتحسنت."</p>
+        <div class="t-meta"><span><strong>أحمد سامي</strong> – Nile Logistics</span><span class="small">5 نجوم</span></div>
+      </div>
+
+      <div class="test anim" data-anim="zoom-out" data-delay="0.40s">
+        <div class="stars">★★★★★</div>
+        <p>"التحديثات السريعة والدعم الفني خلانا نركز في شغلنا ومبقيناش نقلق على الموقع."</p>
+        <div class="t-meta"><span><strong>منى ناجي</strong> – Elegant Beauty</span><span class="small">5 نجوم</span></div>
+      </div>
+
+      <div class="test anim" data-anim="fade-left" data-delay="0.44s">
+        <div class="stars">★★★★★</div>
+        <p>"بعد إدارتهم للموقع، بقت الصفحات المرشحة في جوجل بتجيب لنا عملاء جدد كل أسبوع."</p>
+        <div class="t-meta"><span><strong>كريم فؤاد</strong> – Smart Business</span><span class="small">5 نجوم</span></div>
+      </div>
+
+      <div class="test anim" data-anim="zoom-rotate" data-delay="0.48s">
+        <div class="stars">★★★★★</div>
+        <p>"التعامل احترافي، وتقارير الأداء بتخلينا نعرف إيه اللي شغال وإيه لأ."</p>
+        <div class="t-meta"><span><strong>ليلى محمود</strong> – Cafe Bloom</span><span class="small">5 نجوم</span></div>
+      </div>
+
+      <div class="test anim" data-anim="fade-up" data-delay="0.52s">
+        <div class="stars">★★★★★</div>
+        <p>"خدمة ممتازة وأسعار واضحة. أنصح أي حد عايز يرفع موقعه لمحترف."</p>
+        <div class="t-meta"><span><strong>محمود علاء</strong> – Future Tech</span><span class="small">5 نجوم</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="background:#0b67b2;color:#fff;padding:30px 20px;text-align:center;font-family: Tahoma ,sans-serif;">
+    <div style="margin-bottom:15px;">
+      <h3 style="margin:0;font-size:22px;">Creative Voice Agency</h3>
+      <p style="margin:5px 0 0;font-size:14px;color:#dce7f3;">شريكك في تصميم وإدارة المواقع</p>
+    </div>
+    <div style="margin:15px 0;">
+ <a href="https://wa.me/201287296630" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Whatsapp" width="28">
+      </a>
+      <a href="https://facebook.com/CreativeVoiceAgency" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="28">
+      </a>
+      <a href="https://instagram.com/" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="28">
+      </a>
+      <a href="https://linkedin.com/" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="28">
+      </a>
+      <a href="https://youtube.com/" target="_blank" style="margin:0 8px;display:inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube" width="28">
+      </a>
+    </div>
+    <div style="margin:15px 0;font-size:15px;">
+      📞 01287296630 | ✉️ Adel_Saad2@hotmail.com
+    </div>
+    <p style="margin-top:15px;font-size:13px;color:#dce7f3;">
+      © 2025 Creative Voice Agency - جميع الحقوق محفوظة
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
