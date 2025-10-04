@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>اتصل بنا - Creative Voice</title>
 
+  <!-- AOS Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- زر الوضع الليلي -->
   <button id="theme-toggle" aria-label="تبديل الوضع">🌙</button>
 
   <!-- أيقونات خلفية -->
@@ -18,6 +21,7 @@
   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="floating-icon icon4" alt="whatsapp">
   <img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" class="floating-icon icon5" alt="youtube">
 
+  <!-- سيكشن التواصل -->
   <div class="contact-section">
     <div class="contact-info" data-aos="fade-left">
       <h2>تواصل معنا 📩</h2>
@@ -29,7 +33,7 @@
 
     <div class="contact-form-wrapper" data-aos="fade-right">
       <h3>أرسل لنا رسالة ✨</h3>
-      <form id="contactForm">
+      <form id="contactForm" onsubmit="handleContactSubmit(event)">
         <input class="input" type="text" id="cname" placeholder="الاسم الكامل" required>
         <input class="input" type="email" id="cemail" placeholder="البريد الإلكتروني" required>
         <input class="input" type="tel" id="cphone" placeholder="رقم التليفون">
@@ -43,6 +47,7 @@
     </div>
   </div>
 
+  <!-- الفوتر -->
   <footer>
     <h3>Creative Voice Agency</h3>
     <p>شريكك في تصميم وإدارة المواقع</p>
@@ -53,16 +58,17 @@
       <a href="https://linkedin.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
       <a href="https://youtube.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube"></a>
     </div>
-
     <p>📞 01287296630 | ✉️ Adel_Saad2@hotmail.com</p>
     <p style="font-size:13px;color:#dce7f3;">© 2025 Creative Voice Agency - جميع الحقوق محفوظة</p>
   </footer>
 
-  <a href="https://wa.me/201287296630" target="_blank" id="whatsappBtn">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-  </a>
-
+  <!-- Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/main.js"></script>
+  <script src="script.js"></script>
+<!-- زر واتساب CTA مع اللوجو فقط -->
+<a href="https://wa.me/201287296630" target="_blank" id="whatsappBtn">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
 </body>
 </html>
